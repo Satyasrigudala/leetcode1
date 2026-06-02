@@ -13,14 +13,11 @@ class TreeNode:
 class Solution:
     def inorderTraversal(self, root: TreeNode):
         res = []
-
         def inorder(node):
             if not node:
                 return
-            inorder(node.left)      # 1. Visit left subtree
-            res.append(node.val)    # 2. Visit node itself
-            inorder(node.right)     # 3. Visit right subtree
-
+            inorder(node.left)     
+            res.append(node.val)   
+            inorder(node.right)     
         inorder(root)
         return res
-        
