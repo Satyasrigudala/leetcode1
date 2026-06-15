@@ -12,3 +12,5 @@ class Solution:
             list2.next = self.mergeTwoLists(list1, list2.next)
             return list2
 
+
+
